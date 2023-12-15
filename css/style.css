@@ -1,0 +1,59 @@
+.list {
+    counter-reset: list-number;
+}
+
+.item {
+    list-style-type: none;
+    max-width: 290px;
+}
+
+.item::before {
+    content: counter(list-number);
+    counter-increment: list-number;
+    background-image: url(../imgs/round.svg);
+    min-width: 60px;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    text-align: center;
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 35px;
+    color: #75BF7A;
+    max-width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.item-title {
+    font-family: 'Gilroy-ExtraBold';
+}
+
+.benefit_num {
+    color: #75BF7A;
+    font-size: 88px;
+    font-family: 'Gilroy-Medium';
+
+}
+
+.btn_help {
+    background-color: #75BF7A;
+    border-color: #75BF7A;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn_help:hover {
+    background-color: transparent;
+    color: #75BF7A;
+    border: 1px solid #75BF7A;
+}
+
+.btn_download {
+    background-color: #000;
+}
+
+.btn_download:hover {
+    background-color: #9E9DA2;
+    border-color: #9E9DA2;
+}
